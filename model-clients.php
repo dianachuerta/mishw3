@@ -3,7 +3,7 @@
 function selectClients() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT doctor_id, doctor_name, specialization FROM `doctor`");
+        $stmt = $conn->prepare("SELECT client_id, client_name, client_address FROM `client`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
