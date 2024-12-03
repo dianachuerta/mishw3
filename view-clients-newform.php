@@ -18,11 +18,11 @@
         <form method="post" action="">
                 <div class="mb-3">
                   <label for="cName" class="form-label">Client Name</label>
-                  <input type="email" class="form-control" id="cName" name="cName">
+                  <input type="text" class="form-control" id="cName" name="cName">
                 </div>
                <div class="mb-3">
                   <label for="cAddress" class="form-label">Client Address</label>
-                  <input type="email" class="form-control" id="cAddress" name="cAddress">
+                  <input type="text" class="form-control" id="cAddress" name="cAddress">
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
       </form>
