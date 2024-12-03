@@ -28,11 +28,11 @@ function insertClient($cName, $cAddress) {
     }
 }
 
-function updateClient($cName, $cAddress) {
+function updateClient($cName, $cAddress, $cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `client` ( `client_name`, `client_address`) VALUES (?, ?)");
-        $stmt->bind_param("ss", $cName, $cAddress);
+        $stmt = $conn->prepare("update `client` set `client_name` = ? , `client_address` = ? where client_id = ?");
+        $stmt->bind_param("ssi", $cName, $cAddress, $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -43,11 +43,11 @@ function updateClient($cName, $cAddress) {
 }
 
 
-function insertClient($cName, $cAddress) {
+function deleteClient($cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `client` ( `client_name`, `client_address`) VALUES (?, ?)");
-        $stmt->bind_param("ss", $cName, $cAddress);
+        $stmt = $conn->prepare("delete from client where client_id = ?");
+        $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
