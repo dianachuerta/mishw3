@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add": 
-      insertClient($_Post['cName'],$_POST['cAddress']);
+      insertClient($_POST['cName'],$_POST['cAddress']);
       break;
   }
 }
