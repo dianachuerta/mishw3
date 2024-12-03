@@ -6,6 +6,7 @@
         <th>ID</th>
         <th>Name</th>
         <th>Address</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,12 @@ while ($client = $clients->fetch_assoc()) {
     <td><?php echo $client ['client_id'];?></td>
     <td><?php echo $client ['client_name'];?></td>
     <td><?php echo $client ['client_address'];?></td>
+    <td>
+      <form method="post" action="consultations-by-client.php">
+        <input type="hidden" name="cid" value="<?php echo $client ['client_id'];?>">
+            <button type="submit" class="btn btn-primary">Consultations</button>
+          </form>
+    </td>
   </tr>
 <?php
 }
