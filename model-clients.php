@@ -13,4 +13,49 @@ function selectClients() {
         throw $e;
     }
 }
+
+function insertClient($cName, $cAddress) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `client` ( `client_name`, `client_address`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $cName, $cAddress);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateClient($cName, $cAddress) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `client` ( `client_name`, `client_address`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $cName, $cAddress);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function insertClient($cName, $cAddress) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `client` ( `client_name`, `client_address`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $cName, $cAddress);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
 ?>
