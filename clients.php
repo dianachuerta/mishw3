@@ -8,7 +8,11 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add": 
-      insertClient($_POST['cName'],$_POST['cAddress']);
+      if (insertClient($_POST['cName'],$_POST['cAddress'])) {
+      echo '<div class="alert alert-success" role="alert"> A client has been added!</div>"';
+      } else {
+      echo '<div class="alert alert-danger" role="alert"> Error!</div>"'; 
+      }
       break;
   }
 }
