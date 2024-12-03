@@ -24,6 +24,7 @@
                   <label for="cAddress" class="form-label">Client Address</label>
                   <input type="text" class="form-control" id="cAddress" name="cAddress">
                 </div>
+               <input type="hidden" name="actionType" value="Add">
                 <button type="submit" class="btn btn-primary">Save</button>
       </form>
         
