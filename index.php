@@ -17,17 +17,17 @@ include "view-header.php";  // This will include the navbar
         z-index: 10; /* Keeps the navbar on top */
     }
 
-    /* Body styling */
+    /* Body styling with light pink background */
     body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: white; /* Page background */
+        background-color: #ffebf2; /* Light pink background */
     }
 
     /* Create space under the navbar for content */
     .content {
-        padding-top: 80px; /* Space below the navbar (adjust based on navbar height) */
+        padding-top: 60px; /* Reduced space between the navbar and content */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,3 +66,4 @@ include "view-header.php";  // This will include the navbar
 <?php
 include "view-footer.php";  // This will include the footer
 ?>
+
