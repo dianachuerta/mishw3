@@ -1,6 +1,6 @@
 <div class= "row">
   <div class="col" >
-    <h1>Clients</h1>
+    <h1 style="background-color: #E6E6FA; padding: 10px; border-radius: 5px;">Clients</h1>
   </div>
   <div class="col-auto">
 
