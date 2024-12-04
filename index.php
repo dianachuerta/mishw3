@@ -10,9 +10,9 @@ include "view-header.php";
         padding: 0;
     }
     h1 {
-        font-size: 48px; 
-        text-align: center; 
-        margin-top: 20px;
+        font-size: 48px; /* Big letters for "Final Project" */
+        text-align: center; /* Center the text */
+        margin-top: 20px; /* Add some space from the top */
     }
 </style>
 
@@ -21,4 +21,3 @@ include "view-header.php";
 <?php
 include "view-footer.php";
 ?>
-
