@@ -38,7 +38,7 @@ include "view-header.php";
     h1 {
         font-size: 72px; 
         font-family: 'Poppins', sans-serif;
-        background-color: lightblue; 
+        background-color: #E6E6FA; 
         padding: 20px 40px; 
         border-radius: 10px; 
         display: inline-block; 
