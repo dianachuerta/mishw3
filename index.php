@@ -1,10 +1,10 @@
 <?php
 $pageTitle = "Home";
-include "view-header.php";  
+include "view-header.php";  // This will include the navbar
 ?>
 
 <style>
-   
+    /* Ensure the navbar stays at the top of the screen */
     nav {
         position: fixed;
         top: 0;
@@ -25,9 +25,9 @@ include "view-header.php";
         background-color: #ffebf2; /* Light pink background */
     }
 
-    /* Content styling: no space between navbar and text, aligned left */
+    /* Content styling: added space between navbar and text, aligned left */
     .content {
-        margin-top: 0; /* No padding top, text directly below navbar */
+        margin-top: 40px; /* Added margin-top to create space under the navbar */
         display: flex;
         flex-direction: column;
         justify-content: flex-start; /* Align text to the top */
@@ -63,5 +63,4 @@ include "view-header.php";
 <?php
 include "view-footer.php";  // This will include the footer
 ?>
-
 
