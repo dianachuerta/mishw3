@@ -1,10 +1,10 @@
 <?php
 $pageTitle = "Home";
-include "view-header.php";  // This will include the navbar
+include "view-header.php";  
 ?>
 
 <style>
-    /* Ensure the navbar stays at the top of the screen */
+   
     nav {
         position: fixed;
         top: 0;
@@ -25,14 +25,15 @@ include "view-header.php";  // This will include the navbar
         background-color: #ffebf2; /* Light pink background */
     }
 
-    /* Create space under the navbar for content */
+    /* Content styling: no space between navbar and text, aligned left */
     .content {
-        padding-top: 30px; /* Reduced space between navbar and content */
+        margin-top: 0; /* No padding top, text directly below navbar */
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start; /* Align text to the top */
+        align-items: flex-start; /* Align text to the left */
         height: 100vh;
+        padding-left: 20px; /* Add space to the left of the text */
     }
 
     /* Bubble letter style for the "Final Project" heading */
@@ -62,4 +63,5 @@ include "view-header.php";  // This will include the navbar
 <?php
 include "view-footer.php";  // This will include the footer
 ?>
+
 
