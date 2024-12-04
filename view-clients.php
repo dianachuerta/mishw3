@@ -35,6 +35,11 @@ while ($client = $clients->fetch_assoc()) {
     <td><?php echo $client ['client_name'];?></td>
     <td><?php echo $client ['client_address'];?></td>
     <td>
+       <?php
+  include "view-clients-editform.php";
+  ?>
+    </td>
+    <td>
         <form method="post" action="">
         <input type="hidden" name="cid" value="<?php echo $client ['client_id'];?>">
           <input type="hidden" name="actionType" value="Delete">
@@ -46,7 +51,6 @@ while ($client = $clients->fetch_assoc()) {
               </button>
           </form>
     </td>
-    <td></td>
       
     <td>
           <form method="post" action="consultations-by-client.php">
