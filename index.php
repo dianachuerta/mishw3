@@ -27,7 +27,7 @@ include "view-header.php";  // This will include the navbar
 
     /* Create space under the navbar for content */
     .content {
-        padding-top: 60px; /* Adjusted space between navbar and content */
+        padding-top: 30px; /* Reduced space between navbar and content */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,15 +35,23 @@ include "view-header.php";  // This will include the navbar
         height: 100vh;
     }
 
-    /* Style for the "Final Project" heading */
+    /* Bubble letter style for the "Final Project" heading */
     h1 {
         font-size: 72px; /* Big letters for "Final Project" */
+        font-family: 'Poppins', sans-serif; /* Using a rounded, bubbly font */
         background-color: lightblue; /* Light blue highlight */
         padding: 20px 40px; /* Padding around the text */
-        border-radius: 10px; /* Optional: rounded corners */
+        border-radius: 10px; /* Rounded corners */
         display: inline-block; /* Makes the background only around the text */
         color: black; /* Black text color */
-        margin: 0; /* Remove any default margin */
+        margin: 0; /* Remove default margin */
+        text-transform: uppercase; /* Optional: Makes the text all uppercase */
+        font-weight: bold; /* Bold font for more impact */
+        text-shadow: 
+            2px 2px 0px #ffb3d9, /* Light pink shadow to create a bubble effect */
+            -2px -2px 0px #ffb3d9, 
+            2px -2px 0px #ffb3d9, 
+            -2px 2px 0px #ffb3d9; /* More shadows for a rounded bubble look */
     }
 </style>
 
@@ -54,3 +62,4 @@ include "view-header.php";  // This will include the navbar
 <?php
 include "view-footer.php";  // This will include the footer
 ?>
+
