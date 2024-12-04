@@ -16,9 +16,9 @@
 while ($hospital = $hospitals->fetch_assoc()) {
 ?>
   <tr>
-    <td><?php echo $doctor ['hospital_id '];?></td>
-    <td><?php echo $doctor ['hospital_name'];?></td>
-    <td><?php echo $doctor ['hospital_location'];?></td>
+    <td><?php echo $hospital ['hospital_id '];?></td>
+    <td><?php echo $hospital ['hospital_name'];?></td>
+    <td><?php echo $hospital ['hospital_location'];?></td>
   </tr>
 <?php
 }
