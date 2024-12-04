@@ -1,4 +1,4 @@
-<h1>Doctors with clients</h1>
+<h1 style="background-color: #E6E6FA; padding: 10px; border-radius: 5px;">Doctors with Clients</h1>
 
 <div class="card-group">
  
