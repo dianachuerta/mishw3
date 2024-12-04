@@ -1,4 +1,4 @@
-<h1>Doctors</h1>
+<h1 style="background-color: #E6E6FA; padding: 10px; border-radius: 5px;">Doctors</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
