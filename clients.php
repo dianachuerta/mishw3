@@ -14,6 +14,15 @@ if (isset($_POST['actionType'])) {
       echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
       }
       break;
+
+     case "Edit": 
+      if (updateClient($_POST['cName'],$_POST['cAddress'],$_POST['cid'])) {
+      echo '<div class="alert alert-success" role="alert"> A client has been edited!</div>';
+      } else {
+      echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
+      }
+      break;
+    
       case "Delete": 
       if (deleteClient($_POST['cid'])) {
       echo '<div class="alert alert-success" role="alert"> A client has been deleted!</div>';
@@ -21,6 +30,7 @@ if (isset($_POST['actionType'])) {
       echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
       }
       break;
+   
   }
 }
 
