@@ -4,15 +4,12 @@ include "view-header.php";
 ?>
 
 <style>
-    body {
-        background-color: lightblue;
-        margin: 0;
-        padding: 0;
-    }
     h1 {
         font-size: 48px; /* Big letters for "Final Project" */
-        text-align: center; /* Center the text */
-        margin-top: 20px; /* Add some space from the top */
+        background-color: lightblue; /* Light blue highlight */
+        padding: 10px 20px; /* Add padding around the text */
+        border-radius: 5px; /* Optional: rounded corners for the background */
+        display: inline-block; /* Makes the background only around the text */
     }
 </style>
 
