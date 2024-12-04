@@ -1,6 +1,6 @@
 <?php
 
-function selectClients() {
+function selectHospitals() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT hospital_id, hospital_name, hospital_location FROM `hospital`");
