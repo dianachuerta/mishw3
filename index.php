@@ -1,56 +1,60 @@
 <?php
 $pageTitle = "Home";
-include "view-header.php"; 
+include "view-header.php";  // This will include the navbar
 ?>
 
 <style>
+    /* Ensure the navbar stays at the top of the screen */
     nav {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background-color: #333;
+        background-color: #000080; /* Navy blue background for the navbar */
         color: white;
         padding: 10px 0;
         text-align: center;
-        z-index: 10; 
+        z-index: 10; /* Keeps the navbar on top */
+        border-radius: 20px; /* Rounded corners */
+        margin: 10px; /* Optional: space around the navbar */
     }
 
+    /* Body styling with light pink background */
     body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #ffebf2; 
+        background-color: #ffebf2; /* Light pink background */
     }
 
-    
+    /* Content styling: added space between navbar and text, aligned left */
     .content {
-        margin-top: 40px; 
+        margin-top: 60px; /* Space under the navbar */
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; 
+        justify-content: flex-start; /* Align text to the top */
+        align-items: flex-start; /* Align text to the left */
         height: 100vh;
-        padding-left: 20px; 
+        padding-left: 20px; /* Add space to the left of the text */
     }
 
-    
+    /* Bubble letter style for the "Final Project" heading */
     h1 {
-        font-size: 72px; 
-        font-family: 'Poppins', sans-serif; 
-        background-color: lightblue; 
-        padding: 20px 40px; 
-        border-radius: 10px;
-        display: inline-block; 
-        color: black; 
-        margin: 0; 
-        text-transform: uppercase; 
-        font-weight: bold;
+        font-size: 72px; /* Big letters for "Final Project" */
+        font-family: 'Poppins', sans-serif; /* Using a rounded, bubbly font */
+        background-color: lightblue; /* Light blue highlight */
+        padding: 20px 40px; /* Padding around the text */
+        border-radius: 10px; /* Rounded corners */
+        display: inline-block; /* Makes the background only around the text */
+        color: black; /* Black text color */
+        margin: 0; /* Remove default margin */
+        text-transform: uppercase; /* Optional: Makes the text all uppercase */
+        font-weight: bold; /* Bold font for more impact */
         text-shadow: 
-            2px 2px 0px #ffb3d9, 
+            2px 2px 0px #ffb3d9, /* Light pink shadow to create a bubble effect */
             -2px -2px 0px #ffb3d9, 
             2px -2px 0px #ffb3d9, 
-            -2px 2px 0px #ffb3d9; 
+            -2px 2px 0px #ffb3d9; /* More shadows for a rounded bubble look */
     }
 </style>
 
@@ -59,6 +63,6 @@ include "view-header.php";
 </div>
 
 <?php
-include "view-footer.php"; 
+include "view-footer.php";  // This will include the footer
 ?>
 
