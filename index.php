@@ -27,7 +27,7 @@ include "view-header.php";  // This will include the navbar
 
     /* Create space under the navbar for content */
     .content {
-        padding-top: 60px; /* Reduced space between the navbar and content */
+        padding-top: 60px; /* Adjusted space between navbar and content */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,25 +45,12 @@ include "view-header.php";  // This will include the navbar
         color: black; /* Black text color */
         margin: 0; /* Remove any default margin */
     }
-
-    /* Style for the "By: Diana Huerta" text */
-    .author {
-        font-size: 24px; /* Smaller letters for the author's name */
-        background-color: lightblue; /* Light blue highlight */
-        padding: 10px 20px; /* Add padding around the text */
-        border-radius: 5px; /* Optional: rounded corners */
-        display: inline-block; /* Makes the background only around the text */
-        color: black; /* Black text color */
-        margin-top: 10px; /* Space between the title and the author text */
-    }
 </style>
 
 <div class="content">
     <h1>Final Project</h1>
-    <div class="author">By: Diana Huerta</div>
 </div>
 
 <?php
 include "view-footer.php";  // This will include the footer
 ?>
-
