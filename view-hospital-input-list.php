@@ -2,7 +2,7 @@
  <?php
 while ($hospitalItem = $hospitalList->fetch_assoc()) {
   ?>
-    <option value="<?php echo $hospitalItem['hospital_name'];?>"><?php echo $hospitalItem['hospital_location'];?>">  </option>
+    <option value="<?php echo $hospitalItem['hospital_name'];?>"></option>
 
   <?php
 }
