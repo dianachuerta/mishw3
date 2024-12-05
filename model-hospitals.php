@@ -43,7 +43,7 @@ function updateHospitals($hName, $hLocation, $hid) {
 }
 
 
-function deleteClient($hid) {
+function deleteHospital($hid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from hospital where hospital_id = ?");
