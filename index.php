@@ -11,11 +11,24 @@ include "view-header.php";
         right: 0;
         background-color: #000080;
         color: white;
-        padding: 10px 0;
-        text-align: center;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space between the logo and other navbar content */
         z-index: 10; 
         border-radius: 20px; 
         margin: 10px;
+    }
+
+    nav img {
+        height: 40px; /* Adjust logo size */
+        margin-right: 10px;
+    }
+
+    nav .title {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
     }
 
     body {
@@ -26,29 +39,46 @@ include "view-header.php";
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed; /* Keeps the background fixed when scrolling */
+        background-attachment: fixed;
     }
 
     .content {
-        margin-top: 60px; 
+        margin-top: 80px; 
         display: flex;
         flex-direction: column;
         justify-content: flex-start; 
         align-items: flex-start; 
         height: 100vh;
         padding-left: 20px;
-        background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+        background-color: rgba(255, 255, 255, 0.8); 
         border-radius: 10px;
         padding: 20px;
     }
 
-    
+    h1 {
+        font-size: 72px; 
+        font-family: 'Poppins', sans-serif;
+        color: black; 
+        margin: 0; 
+        text-transform: uppercase; 
+        font-weight: bold; 
+        text-shadow: 
+            2px 2px 0px #ffb3d9, 
+            -2px -2px 0px #ffb3d9, 
+            2px -2px 0px #ffb3d9, 
+            -2px 2px 0px #ffb3d9; 
+    }
 </style>
 
+<nav>
+    <img src="https://thumbs.dreamstime.com/b/hospital-logo-icon-135146818.jpg" alt="Hospital Logo">
+    <div class="title">Hospital Navbar</div>
+</nav>
 
+<div class="content">
+    <h1>Final Project</h1>
+</div>
 
 <?php
 include "view-footer.php"; 
 ?>
-
-
