@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$hospitals=selectHospitals();
+$hospitals=selectHospital();
 include "view-hospitals.php";
 include "view-footer.php";
 ?>
