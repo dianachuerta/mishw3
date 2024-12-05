@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add": 
-      if (insertHospitals($_POST['hName'],$_POST['hLocation'])) {
+      if (insertHospital($_POST['hName'],$_POST['hLocation'])) {
       echo '<div class="alert alert-success" role="alert"> A hospital has been added!</div>';
       } else {
       echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
@@ -16,7 +16,7 @@ if (isset($_POST['actionType'])) {
       break;
 
      case "Edit": 
-      if (updateHospitals($_POST['hName'],$_POST['hLocation'],$_POST['hid'])) {
+      if (updateHospital($_POST['hName'],$_POST['hLocation'],$_POST['hid'])) {
       echo '<div class="alert alert-success" role="alert"> A hospital has been edited!</div>';
       } else {
       echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])) {
       break;
     
       case "Delete": 
-      if (deleteHospitals($_POST['hid'])) {
+      if (deleteHospital($_POST['hid'])) {
       echo '<div class="alert alert-success" role="alert"> A hospital has been deleted!</div>';
       } else {
       echo '<div class="alert alert-danger" role="alert"> Error!</div>'; 
