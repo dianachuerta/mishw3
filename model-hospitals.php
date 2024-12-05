@@ -1,6 +1,6 @@
 <?php
 
-function selectHospitals() {
+function selectHospital() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT hospital_id, hospital_name, hospital_location FROM `hospital`");
@@ -14,7 +14,7 @@ function selectHospitals() {
     }
 }
 
-function insertHospitals ($hName, $hLocation) {
+function insertHospital ($hName, $hLocation) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `hospital` ( `hospital_name`, `hospital_location`) VALUES (?, ?)");
@@ -28,7 +28,7 @@ function insertHospitals ($hName, $hLocation) {
     }
 }
 
-function updateHospitals($hName, $hLocation, $hid) {
+function updateHospital($hName, $hLocation, $hid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `hospital` set `hospital_name` = ? , `hospital_location` = ? where hospital_id = ?");
