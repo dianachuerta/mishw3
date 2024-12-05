@@ -18,7 +18,7 @@
         <form method="post" action="">
                 <div class="mb-3">
                   <label for="hName" class="form-label">Hospital Name</label>
-                  <input type="text" class="form-control" id="cName" name="cName">
+                  <input type="text" class="form-control" id="hName" name="hName">
                 </div>
                <div class="mb-3">
                   <label for="hLocation" class="form-label">Hospital Location</label>
