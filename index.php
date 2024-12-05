@@ -52,13 +52,25 @@ include "view-header.php";
             2px -2px 0px #ffb3d9, 
             -2px 2px 0px #ffb3d9; 
     }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
 </style>
 
 <div class="content">
-    <h1>Final Project</h1>
+    <h1>Welcome to my final project!</h1>
+    <div class="image-container">
+        <img src="https://images.pexels.com/photos/3769151/pexels-photo-3769151.jpeg?cs=srgb&dl=pexels-olly-3769151.jpg&fm=jpg" alt="Hospital">
+    </div>
 </div>
 
 <?php
 include "view-footer.php"; 
 ?>
-
