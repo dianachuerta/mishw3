@@ -17,7 +17,7 @@
         <form method="post" action="">
                 <div class="mb-3">
                   <label for="dName<?php echo $doctor['doctor_id'];?>" class="form-label">Doctor Name</label>
-                  <input type="text" class="form-control" id="dName<?php echo $doctor['$doctor_id'];?>" name="dName" value="<?php echo $doctor['doctor_name'];?>">
+                  <input type="text" class="form-control" id="dName<?php echo $doctor['doctor_id'];?>" name="dName" value="<?php echo $doctor['doctor_name'];?>">
                 </div>
                <div class="mb-3">
                   <label for="dSpecialization<?php echo $doctor['doctor_id'];?>" class="form-label">Doctor Specialization </label>
