@@ -34,6 +34,15 @@ if (isset($_POST['actionType'])) {
   }
 }
 
+?>
+<style>
+    body {
+        background-color: #ffebf2; 
+    }
+</style>
+
+<?php
+
 $hospitals=selectHospital();
 include "view-hospitals.php";
 include "view-footer.php";
