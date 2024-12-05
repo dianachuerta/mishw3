@@ -42,24 +42,10 @@ include "view-header.php";
         padding: 20px;
     }
 
-    h1 {
-        font-size: 72px; 
-        font-family: 'Poppins', sans-serif;
-        color: black; 
-        margin: 0; 
-        text-transform: uppercase; 
-        font-weight: bold; 
-        text-shadow: 
-            2px 2px 0px #ffb3d9, 
-            -2px -2px 0px #ffb3d9, 
-            2px -2px 0px #ffb3d9, 
-            -2px 2px 0px #ffb3d9; 
-    }
+    
 </style>
 
-<div class="content">
-    <h1>Final Project</h1>
-</div>
+
 
 <?php
 include "view-footer.php"; 
