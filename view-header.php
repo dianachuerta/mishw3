@@ -25,6 +25,9 @@
          <li class="nav-item">
           <a class="nav-link" href="clients.php">Clients</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hospitals.php">Hospitals</a>
+        </li>
          <li class="nav-item">
           <a class="nav-link" href="doctors-with-clients.php">Doctors with clients</a>
         </li>
