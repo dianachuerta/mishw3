@@ -65,9 +65,9 @@ include "view-header.php";
 </style>
 
 <div class="content">
-    <h1>Welcome to my final project!</h1>
+    <h1>Welcome to my Final Project!</h1>
     <div class="image-container">
-        <img src="https://images.pexels.com/photos/3769151/pexels-photo-3769151.jpeg?cs=srgb&dl=pexels-olly-3769151.jpg&fm=jpg" alt="Hospital">
+        <img src="https://thumbs.dreamstime.com/z/hospital-building-white-background-city-flat-style-47934085.jpg" alt="Hospital Building">
     </div>
 </div>
 
