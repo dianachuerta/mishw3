@@ -14,6 +14,20 @@ function selectHospital() {
     }
 }
 
+function selectHospitalForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT hospital_id, hospital_name FROM `hospital` order by hospital_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertHospital ($hName, $hLocation) {
     try {
         $conn = get_db_connection();
