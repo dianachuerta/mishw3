@@ -65,12 +65,13 @@ include "view-header.php";
 </style>
 
 <div class="content">
-    <h1>Welcome to my Final Project!</h1>
+    <h1>Final Project</h1>
     <div class="image-container">
-        <img src="https://thumbs.dreamstime.com/z/hospital-building-white-background-city-flat-style-47934085.jpg" alt="Hospital Building">
+        <img src="https://t4.ftcdn.net/jpg/01/66/84/65/360_F_166846543_qycnjeADgOS13Z778I8IC9IR2LEiRUF7.jpg" alt="Hospital Building">
     </div>
 </div>
 
 <?php
 include "view-footer.php"; 
 ?>
+
