@@ -22,7 +22,11 @@ include "view-header.php";
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #ffebf2; 
+        background-image: url('https://t4.ftcdn.net/jpg/01/66/84/65/360_F_166846543_qycnjeADgOS13Z778I8IC9IR2LEiRUF7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background fixed when scrolling */
     }
 
     .content {
@@ -33,15 +37,14 @@ include "view-header.php";
         align-items: flex-start; 
         height: 100vh;
         padding-left: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+        border-radius: 10px;
+        padding: 20px;
     }
 
     h1 {
         font-size: 72px; 
         font-family: 'Poppins', sans-serif;
-        background-color: #E6E6FA; 
-        padding: 20px 40px; 
-        border-radius: 10px; 
-        display: inline-block; 
         color: black; 
         margin: 0; 
         text-transform: uppercase; 
@@ -52,26 +55,14 @@ include "view-header.php";
             2px -2px 0px #ffb3d9, 
             -2px 2px 0px #ffb3d9; 
     }
-
-    .image-container {
-        margin-top: 20px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
 </style>
 
 <div class="content">
     <h1>Final Project</h1>
-    <div class="image-container">
-        <img src="https://t4.ftcdn.net/jpg/01/66/84/65/360_F_166846543_qycnjeADgOS13Z778I8IC9IR2LEiRUF7.jpg" alt="Hospital Building">
-    </div>
 </div>
 
 <?php
 include "view-footer.php"; 
 ?>
+
 
