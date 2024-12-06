@@ -57,7 +57,9 @@ include "view-header.php";
 
 </style>
 
-
+<h1>
+    Welcome to my Website!  
+</h1>
 
 <?php
 include "view-footer.php"; 
