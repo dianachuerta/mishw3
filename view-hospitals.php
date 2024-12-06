@@ -13,8 +13,8 @@
 </div>
 
 <div class="table-responsive">
-  <table class="table">
-    <thead>
+  <table class="table table-bordered table-striped table-hover" style="background-color: #f8f0f6;">
+    <thead class="thead-dark" style="background-color: #FF1493; color: white;">
       <tr>
         <th>ID</th>
         <th>Name</th>
