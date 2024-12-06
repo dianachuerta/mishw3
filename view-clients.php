@@ -66,3 +66,13 @@ while ($client = $clients->fetch_assoc()) {
     </tbody>
   </table>
 </div>
+
+function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['City', 'Clients', { role: 'style' } ],
+        ['Oklahoma City', 1, 'color: gray'],
+        ['Norman', 3, 'color: #76A7FA'],
+        ['Moore', 1, 'opacity: 0.2'],
+        ['2040', 22, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
+        ['2050', 28, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2']
+      ]);
