@@ -43,12 +43,11 @@ include "view-header.php";
     }
 
     .content {
-        margin-top: 40px; /* Reduced margin-top to move the text higher */
+        margin-top: 100px; /* Ensure the content is below the navbar */
         display: flex;
         flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-        height: 100vh;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
     }
 
