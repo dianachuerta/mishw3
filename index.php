@@ -57,9 +57,44 @@ include "view-header.php";
 
 </style>
 
-<h1>
-    Welcome to my Website!  
-</h1>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages': ['geochart'],
+        'mapsApiKey': 'YOUR_API_KEY' // Optional if you want custom styling
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['State', 'Popularity'],
+          ['Oklahoma', 1000],
+          ['California', 300],
+          ['Texas', 400],
+          ['New York', 500],
+          ['Florida', 200],
+        ]);
+
+        var options = {
+          region: 'US', // Focuses on the US
+          displayMode: 'regions',
+          resolution: 'provinces',
+          colorAxis: { colors: ['#e7f0fa', '#081d58'] } // Color gradient
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
 
 <?php
 include "view-footer.php"; 
