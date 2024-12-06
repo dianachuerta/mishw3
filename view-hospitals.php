@@ -27,9 +27,9 @@
         <td><?php echo $hospital['hospital_name']; ?></td>
         <td><?php echo $hospital['hospital_location']; ?></td>
         <td>
-          <button class="btn" style="background-color: #FF69B4; color: white;" onclick="location.href='view-hospitals-editform.php?id=<?php echo $hospital['hospital_id']; ?>'">
+          <a href="view-hospitals-editform.php?id=<?php echo $hospital['hospital_id']; ?>" class="btn" style="background-color: #FF69B4; color: white;">
             Edit
-          </button>
+          </a>
         </td>
         <td>
           <form method="post" action="">
