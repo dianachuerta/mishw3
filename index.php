@@ -1,57 +1,59 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {
-        'packages': ['geochart'],
-        'mapsApiKey': 'YOUR_API_KEY' // Optional for enhanced map features
-      });
-      google.charts.setOnLoadCallback(drawRegionsMap);
-
-      function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-          ['City', 'Hospitals'],
-          ['Oklahoma City', 25],
-          ['Tulsa', 18],
-          ['Norman', 10],
-          ['Edmond', 8],
-          ['Stillwater', 5]
-        ]);
-
-        var options = {
-          region: 'US-OK', // Focuses on Oklahoma
-          displayMode: 'markers',
-          resolution: 'provinces',
-          colorAxis: { colors: ['#e0f7fa', '#006064'] }, // Custom color gradient
-          legend: { position: 'none' }
-        };
-
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-        chart.draw(data, options);
-      }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?=$pageTitle?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-      #regions_div {
-        float: left; /* Positions the chart on the left side */
-        width: 400px; /* Reduces chart width */
-        height: 300px; /* Reduces chart height */
-        margin-right: 20px; /* Adds space between the chart and other content */
-        border: 1px solid #ccc; /* Optional border for clarity */
-        padding: 10px; /* Adds padding inside the chart container */
-        border-radius: 10px; /* Rounds the chart container edges */
-        background-color: #f9f9f9; /* Light background color */
+      .navbar {
+        background-color: #87CEFA !important; /* Light blue color for the navbar */
+      }
+      .navbar-brand img {
+        height: 40px; /* Adjust the height of the logo */
+        margin-right: 10px;
+      }
+      .navbar .nav-link {
+        color: white !important; /* White text for nav links */
+      }
+      .navbar .nav-link:hover {
+        color: #4682B4 !important; /* Steel blue for hover effect */
       }
     </style>
   </head>
   <body>
-    <div id="regions_div"></div>
-    <div style="margin-left: 420px; padding: 10px;">
-      <h3>Hospitals in Oklahoma</h3>
-      <p>
-        Oklahoma has a diverse range of hospitals across major cities like Oklahoma City, Tulsa, and Norman. 
-        These facilities provide essential healthcare services to the state's population.
-      </p>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://thumbs.dreamstime.com/b/red-cross-vector-icon-hospital-sign-medical-health-first-aid-symbol-isolated-vhite-modern-gradient-design-141217893.jpg" alt="Hospital Logo">
+            Navbar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctors.php">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.php">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hospitals.php">Hospitals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctors-with-clients.php">Doctors with clients</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+AMvyZqU1zL0vb6+AMfum13BjuGlk" crossorigin="anonymous"></script>
   </body>
 </html>
