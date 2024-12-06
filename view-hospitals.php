@@ -59,3 +59,40 @@ while ($hospital = $hospitals->fetch_assoc()) {
     </tbody>
   </table>
 </div>
+
+<style>
+  .table th, .table td {
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .table-responsive {
+    margin-top: 20px;
+  }
+
+  .table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FF69B4;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .thead-dark th {
+    background-color: #FF1493 !important;
+    color: #fff;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+</style>
