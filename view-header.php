@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,17 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
       .navbar {
-        background-color: #000080 !important; /* Navy blue color for the navbar */
+        background-color: #87CEFA !important;
       }
       .navbar-brand img {
-        height: 40px; /* Adjust the height of the logo */
+        height: 40px; 
         margin-right: 10px;
       }
       .navbar .nav-link {
-        color: white !important; /* White text for nav links */
+        color: white !important; 
       }
       .navbar .nav-link:hover {
-        color: #ffcccb !important; /* Light pink for hover effect */
+        color: #4682B4 !important; 
       }
     </style>
   </head>
