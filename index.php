@@ -43,7 +43,7 @@ include "view-header.php";
     }
 
     .content {
-        margin-top: 80px; 
+        margin-top: 40px; /* Reduced margin-top to move the text higher */
         display: flex;
         flex-direction: column;
         justify-content: center; 
@@ -67,7 +67,7 @@ include "view-header.php";
 </style>
 
 <div class="content">
-    <h1>Welcome to my website!</h1>
+    <h1>Welcome to my website</h1>
 </div>
 
 <?php
