@@ -1,4 +1,4 @@
-   <?php
+ <?php
 $pageTitle = "Home";
 include "view-header.php";  
 ?>
@@ -54,9 +54,25 @@ include "view-header.php";
         border-radius: 10px;
         padding: 20px;
     }
+
+    h1 {
+        font-size: 48px;
+        font-family: 'Poppins', sans-serif; 
+        font-weight: bold;
+        color: white; 
+        text-align: center;
+        text-shadow: 
+          -2px -2px 0 #ADD8E6, 
+           2px -2px 0 #ADD8E6, 
+          -2px  2px 0 #ADD8E6, 
+           2px  2px 0 #ADD8E6; 
+        margin: 20px;
+    }
 </style>
 
-
+<div class="content">
+    <h1>Welcome to my website</h1>
+</div>
 
 <?php
 include "view-footer.php"; 
