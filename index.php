@@ -14,14 +14,14 @@ include "view-header.php";
         padding: 10px 20px;
         display: flex;
         align-items: center;
-        justify-content: space-between; /* Space between the logo and other navbar content */
+        justify-content: space-between;
         z-index: 10; 
         border-radius: 20px; 
         margin: 10px;
     }
 
     nav img {
-        height: 40px; /* Adjust logo size */
+        height: 40px; 
         margin-right: 10px;
     }
 
@@ -36,14 +36,14 @@ include "view-header.php";
         padding: 0;
         font-family: Arial, sans-serif;
         background-image: url('https://t4.ftcdn.net/jpg/01/66/84/65/360_F_166846543_qycnjeADgOS13Z778I8IC9IR2LEiRUF7.jpg');
-        background-size: cover; /* Ensures full background coverage */
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed; /* Keeps the background static during scrolling */
+        background-attachment: fixed; 
     }
 
     .content {
-        margin-top: 100px; /* Ensure the content is below the navbar */
+        margin-top: 100px; 
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,21 +52,21 @@ include "view-header.php";
     }
 
     h1 {
-        font-size: 48px; /* Adjust the font size */
-        font-family: 'Poppins', sans-serif; /* Modern font style */
+        font-size: 48px; 
+        font-family: 'Poppins', sans-serif; 
         font-weight: bold;
-        color: white; /* White text color */
+        color: white; 
         text-align: center;
-        background-color: #000080; /* Navy blue background */
-        padding: 10px 20px; /* Add padding inside the highlight */
-        border-radius: 15px; /* Rounded corners */
-        display: inline-block; /* Ensures the highlight wraps the text tightly */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a lifted effect */
+        background-color: #000080; 
+        padding: 10px 20px; 
+        border-radius: 15px; 
+        display: inline-block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 </style>
 
 <div class="content">
-    <h1>Welcome to my website</h1>
+    <h1>Welcome to my website!</h1>
 </div>
 
 <?php
