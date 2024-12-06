@@ -16,7 +16,6 @@
         <th>Location</th>
         <th>Edit</th>
         <th>Delete</th>
-        <th>View Details</th>
       </tr>
     </thead>
     <tbody>
@@ -44,11 +43,6 @@
             </button>
           </form>
         </td>
-        <td>
-          <button class="btn" style="background-color: #8A2BE2; color: white;" onclick="location.href='hospital-details.php?id=<?php echo $hospital['hospital_id']; ?>'">
-            View Details
-          </button>
-        </td>
       </tr>
       <?php
       }
@@ -57,7 +51,7 @@
   </table>
 </div>
 
-
+<!-- Additional Styling -->
 <style>
   .table th, .table td {
     vertical-align: middle;
