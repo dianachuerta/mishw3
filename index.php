@@ -1,4 +1,4 @@
- <?php
+<?php
 $pageTitle = "Home";
 include "view-header.php";  
 ?>
@@ -46,12 +46,9 @@ include "view-header.php";
         margin-top: 80px; 
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; 
-        align-items: flex-start; 
+        justify-content: center; 
+        align-items: center; 
         height: 100vh;
-        padding-left: 20px;
-        background-color: rgba(255, 255, 255, 0.8); 
-        border-radius: 10px;
         padding: 20px;
     }
 
@@ -65,7 +62,6 @@ include "view-header.php";
         padding: 10px 20px; /* Add padding inside the highlight */
         border-radius: 15px; /* Rounded corners */
         display: inline-block; /* Ensures the highlight wraps the text tightly */
-        margin: 20px auto; /* Center the heading */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a lifted effect */
     }
 </style>
