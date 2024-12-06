@@ -36,7 +36,7 @@ include "view-header.php";
         padding: 0;
         font-family: Arial, sans-serif;
         background-image: url('https://t4.ftcdn.net/jpg/01/66/84/65/360_F_166846543_qycnjeADgOS13Z778I8IC9IR2LEiRUF7.jpg');
-        background-size: cover;
+        background-size: contain; /* Adjust size to contain the full image */
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -54,10 +54,11 @@ include "view-header.php";
         border-radius: 10px;
         padding: 20px;
     }
-
 </style>
 
-
+<div class="content">
+    <h1>Welcome to the Home Page</h1>
+</div>
 
 <?php
 include "view-footer.php"; 
