@@ -50,12 +50,12 @@ while ($doctor = $doctors->fetch_assoc()) {
           title: 'Amount of Clients',
           pieSliceText: 'percentage',
           slices: {
-            0: {offset: 0.1, color: '#FFB6C1'},  // Light pink
-            1: {offset: 0.1, color: '#FF69B4'},  // Hot pink
-            2: {offset: 0.1, color: '#ADD8E6'},  // Light blue
-            3: {offset: 0.1, color: '#4682B4'}   // Steel blue
+            0: {offset: 0.1, color: '#FFB6C1'},  
+            1: {offset: 0.1, color: '#FF69B4'},  
+            2: {offset: 0.1, color: '#ADD8E6'},  
+            3: {offset: 0.1, color: '#4682B4'}   
           },
-          chartArea: {width: '80%', height: '80%'}, // Make the chart smaller and centered
+          chartArea: {width: '80%', height: '80%'}, 
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
