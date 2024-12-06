@@ -39,16 +39,16 @@ while ($doctor = $doctors->fetch_assoc()) {
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Patients', 'Patients Per Day'],
+          ['Michael Shelton',     112],
+          ['Sidney Grennan',      23],
+          ['Vivian Yeager',  22],
+          ['Finn Huerta', 299],
+  
         ]);
 
         var options = {
-          title: 'My Daily Activities'
+          title: 'Amount of Patients'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -58,7 +58,7 @@ while ($doctor = $doctors->fetch_assoc()) {
     </script>
   </head>
   <body>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
+    <div id="piechart" style="width: 900px; height: 500px; "></div>
   </body>
 </html>
 
