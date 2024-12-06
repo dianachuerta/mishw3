@@ -56,22 +56,22 @@ include "view-header.php";
     }
 
     h1 {
-        font-size: 48px;
-        font-family: 'Poppins', sans-serif; 
+        font-size: 48px; /* Adjust the font size */
+        font-family: 'Poppins', sans-serif; /* Modern font style */
         font-weight: bold;
-        color: white; 
+        color: white; /* White text color */
         text-align: center;
-        text-shadow: 
-          -2px -2px 0 #ADD8E6, 
-           2px -2px 0 #ADD8E6, 
-          -2px  2px 0 #ADD8E6, 
-           2px  2px 0 #ADD8E6; 
-        margin: 20px;
+        background-color: #000080; /* Navy blue background */
+        padding: 10px 20px; /* Add padding inside the highlight */
+        border-radius: 15px; /* Rounded corners */
+        display: inline-block; /* Ensures the highlight wraps the text tightly */
+        margin: 20px auto; /* Center the heading */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a lifted effect */
     }
 </style>
 
 <div class="content">
-    <h1>Welcome to my website</h1>
+    <h1>Welcome to my website!</h1>
 </div>
 
 <?php
